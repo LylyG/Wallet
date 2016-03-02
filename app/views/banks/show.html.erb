@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Credits:</strong>
+  <%= @bank.credits %>
+</p>
+
+<p>
+  <strong>Debits:</strong>
+  <%= @bank.debits %>
+</p>
+
+<p>
+  <strong>Recipient:</strong>
+  <%= @bank.recipient %>
+</p>
+
+<%= link_to 'Edit', edit_bank_path(@bank) %> |
+<%= link_to 'Back', banks_path %>
