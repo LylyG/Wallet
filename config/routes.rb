@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  root 'banks#index'
+
+
+
   resources :banks
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

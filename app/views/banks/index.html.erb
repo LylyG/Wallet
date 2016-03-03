@@ -1,6 +1,13 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Banks</h1>
+<h1>My Wallet: Personal Finances App</h1>
+
+<h2>Your Dashboard</h2>
+
+<h4>Current Balance: <%=@balance%></h4>
+<p><%= link_to 'Add a transaction', new_bank_path %></p>
+<p><%= link_to 'List of transactions', new_bank_path %></p>
+
 
 <table>
   <thead>
@@ -27,5 +34,3 @@
 </table>
 
 <br>
-
-<%= link_to 'New Bank', new_bank_path %>
